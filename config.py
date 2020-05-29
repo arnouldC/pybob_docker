@@ -108,7 +108,7 @@ def getConfiguration(cfg):
 
             c.printBold("The configuration is written to \""+path+"/pybob/pybob.yml\".\n")
 
-            with open(path+"/pybob/pybob.yml", "w") as f:
+            with open("/usr/src/app/mars-dev/pybob/pybob.yml", "w") as f:
                 yaml.dump(cfg, f, default_flow_style=False)
     cfg["path"] = path
     return cfg
