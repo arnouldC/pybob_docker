@@ -15,7 +15,7 @@ def setupCfg(cfg):
     path = cfg["pyScriptDir"]
     # load server information if not already done
     if not "server" in cfg:
-        with open("/usr/src/app/mars-dev/pybob/server.yml") as f:
+        with open(path+"/server.yml") as f:
             cfg["server"] = yaml.load(f)
 
     # load the package information if not already done
