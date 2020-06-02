@@ -105,10 +105,10 @@ def getConfiguration(cfg):
             # in_ = raw_input_("Enter branch of buildconf [default]: ")
             # if len(in_) > 0:
                 # cfg["buildconfBranch"] = in_
-
+            path="/usr/src/app"
             c.printBold("The configuration is written to \""+path+"/pybob/pybob.yml\".\n")
             
-            print(path)
+            
             with open(path+"/pybob/pybob.yml", "w") as f:
                 yaml.dump(cfg, f, default_flow_style=False)
     cfg["path"] = path
