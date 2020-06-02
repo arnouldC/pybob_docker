@@ -111,4 +111,5 @@ def getConfiguration(cfg):
             with open(path+"/pybob/pybob.yml", "w") as f:
                 yaml.dump(cfg, f, default_flow_style=False)
     cfg["path"] = path
+    print(path)
     return cfg
